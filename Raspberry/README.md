@@ -28,7 +28,7 @@ Startup Scripts content
 sleep 15
 
 # Web Server API
-sudo python /home/pi/Projects/HomeRemote/app.py
+sudo python /home/pi/Projects/HomeRemote/api.py
 ```
 
 ```shell
