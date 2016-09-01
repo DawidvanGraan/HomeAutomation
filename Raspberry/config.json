@@ -1,0 +1,9 @@
+{
+  "database": {
+    "file": "whoshome.db"
+  },
+  "users": [
+    {"name":"USERNAME", "ip":"LOCAL-IP-ADDRESS"},
+    {"name":"Dawid", "ip":"192.168.1.1"}
+  ]
+}
