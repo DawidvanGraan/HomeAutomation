@@ -3,9 +3,24 @@
 ## API Server
 Server running for API CALLS
 
-## WhosHome
+## Who's Home
 whoshome.py for simple presence detection
 
+### Setup 
+You need to update your 'config.json' file to include the Name and Local IP address to monitor. 
+Example config file:
+
+```json
+{
+  "database": {
+    "file": "whoshome.db"
+  },
+  "users": [
+    {"name":"USERNAME", "ip":"LOCAL-IP-ADDRESS"},
+    {"name":"Dawid", "ip":"192.168.1.1"}
+  ]
+}
+```
 
 # Setup
 Add entries into the rc.local file:
