@@ -5,3 +5,37 @@ Server running for API CALLS
 
 ## WhosHome
 whoshome.py for simple presence detection
+
+
+# Setup
+Add entries into the rc.local file:
+
+```shell
+sudo nano /etc/rc.local
+```
+
+```shell
+# Startup Scripts
+/home/pi/startup01.sh &
+/home/pi/startup02.sh &
+```
+
+Startup Scripts content
+
+```shell
+# startup01.sh
+#!/bin/sh
+sleep 15
+
+# Web Server API
+sudo python /home/pi/Projects/HomeRemote/app.py
+```
+
+```shell
+# startup02.sh
+#!/bin/sh
+sleep 15
+
+# Who's Home Script
+python /home/pi/Projects/HomeRemote/whoshome.py
+```
